@@ -1,4 +1,5 @@
 import PageProvider from "./hooks/PageProvider";
+import { Hero } from "./scenes/hero";
 import Navbar from "./scenes/navbar";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <PageProvider>
         <Navbar />
+        <Hero />
       </PageProvider>
     </>
   );

@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  darkMode: ["class"],
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
@@ -19,21 +18,20 @@ export default {
         oleo: ["Oleo Script", "sans-serif"],
         rocknroll: ["RocknRoll One", "sans-serif"],
       },
-      animation: {
-        orbit: "orbit calc(var(--duration)*1s) linear infinite",
+      backgroundImage: () => ({
+        "gradient-yellowred":
+          "linear-gradient(90deg, #FF616A 0%, #FFC837 100%)",
+        "mobile-home": "url('./assets/something.png')",
+      }),
+      content: {
+        evolvetext: "url('./assets/something.png')",
+        name: "url('./assets/name.png')",
       },
-      keyframes: {
-        orbit: {
-          "0%": {
-            transform:
-              "rotate(0deg) translateY(calc(var(--radius) * 1px)) rotate(0deg)",
-          },
-          "100%": {
-            transform:
-              "rotate(360deg) translateY(calc(var(--radius) * 1px)) rotate(-360deg)",
-          },
-        },
-      },
+    },
+    screens: {
+      xs: "480px",
+      sm: "768px",
+      md: "1060px",
     },
   },
   plugins: [],

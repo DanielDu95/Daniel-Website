@@ -10,7 +10,7 @@ const Link = ({ page }: Props) => {
   const { selectedPage, setSelectedPage } = usePageContext();
   return (
     <a
-      className={`${selectedPage === lowerCasePage ? "text-primary-500" : ""} hover:text-primaray-500 transition duration-500`}
+      className={`${selectedPage === lowerCasePage ? "text-primary-600" : ""} font-semibold transition duration-500 hover:text-primary-500`}
       href={`#${lowerCasePage}`}
       onClick={() => setSelectedPage(lowerCasePage)}
     >

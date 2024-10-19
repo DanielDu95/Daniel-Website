@@ -28,18 +28,22 @@ export function Hero() {
 
         {/* Outer Circles (reverse) */}
         <OrbitingCircles
-          className="size-[50px] border-none bg-transparent"
+          className="size-[150px] border-none bg-transparent"
           radius={240}
-          duration={20}
+          duration={40}
           reverse
         >
-          <Icons.notion />
+          <img
+            src="../src/assets/img/Daniel.jpg"
+            alt=""
+            className="rounded-full"
+          />
         </OrbitingCircles>
         <OrbitingCircles
           className="size-[50px] border-none bg-transparent"
           radius={240}
-          duration={20}
-          delay={20}
+          duration={40}
+          delay={30}
           reverse
         >
           <Icons.gitHub />

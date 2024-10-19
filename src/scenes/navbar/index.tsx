@@ -15,11 +15,6 @@ const Navbar = () => {
         {/* LEFT SIDE */}
 
         <div className={`${FLEXCENTER} `}>
-          <img
-            src="../../assets/img/Daniel.jpg"
-            alt="daniel du's photo"
-            className="h-6 w-6"
-          />
           <span className="font-oleo">Daniel Du</span>
         </div>
         {/* RIGHT SIDE */}
@@ -47,9 +42,9 @@ const Navbar = () => {
 
         {/* MOBILE MENU MODAL */}
         {!isAboveMediumScreen && isMenuToggled && (
-          <div className="fixed right-0 top-0 h-full w-[300px] bg-gray-50 text-white drop-shadow-xl">
+          <div className="fixed right-0 top-0 z-40 h-full w-[300px] bg-gray-50 text-white drop-shadow-xl">
             <button
-              className="fixed right-1 top-1"
+              className="fixed right-6 top-6"
               onClick={() => setIsMenuToggled(false)}
             >
               <XMarkIcon className="h-6 w-6 text-white" />

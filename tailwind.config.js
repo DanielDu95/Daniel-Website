@@ -7,6 +7,7 @@ export default {
       colors: {
         "gray-20": "#BBAB94",
         "gray-50": "#342F33",
+        "gray-10": "#D9D9D9",
         "primary-100": "",
         "primary-400": "#F28D70",
         "primary-500": "#E26B46",
@@ -20,6 +21,10 @@ export default {
         oleo: ["Oleo Script", "sans-serif"],
         rocknroll: ["RocknRoll One", "sans-serif"],
       },
+      backgroundImage: () => ({
+        "gradient-yellowred":
+          "linear-gradient(90deg, #FF616A 0%, #FFC837 100%)",
+      }),
       animation: {
         orbit: "orbit calc(var(--duration)*1s) linear infinite",
       },

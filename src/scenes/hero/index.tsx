@@ -5,7 +5,6 @@ import useMediaQuery from "@/hooks/useMediaQuery";
 
 export function Hero() {
   const isAboveSmallScreen = useMediaQuery("(min-width:768px");
-  console.log(isAboveSmallScreen);
   return (
     <div id="#hero" className={`${FLEXCENTER} h-[650px] bg-gray-50`}>
       <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg">

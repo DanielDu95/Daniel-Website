@@ -25,10 +25,28 @@ const Navbar = () => {
                 <Link key={page} page={page} />
               ))}
             </ul>
-            <ul className={`${FLEXCENTER} gap-2`}>
-              <li>icon1</li>
-              <li>icon2</li>
-              <li>icon3</li>
+            <ul className={`${FLEXCENTER} gap-4`}>
+              <li>
+                <img
+                  className="w-6"
+                  src="/src/assets/icons/facebook.png"
+                  alt="facebook"
+                />
+              </li>
+              <li>
+                <img
+                  className="w-6"
+                  src="/src/assets/icons/github.png"
+                  alt="facebook"
+                />
+              </li>
+              <li>
+                <img
+                  className="w-6"
+                  src="/src/assets/icons/instagram.png"
+                  alt="facebook"
+                />
+              </li>
             </ul>
           </div>
         ) : (

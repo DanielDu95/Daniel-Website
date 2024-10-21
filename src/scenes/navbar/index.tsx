@@ -10,7 +10,7 @@ const Navbar = () => {
   const isAboveMediumScreen = useMediaQuery("(min-width: 1060px)");
 
   return (
-    <nav className={`${FLEXCENTER} w-full bg-gray-20 py-4`}>
+    <nav className={`${FLEXCENTER} w-full bg-gray-20 py-4 text-xl`}>
       <div className="flex w-4/5 justify-between">
         {/* LEFT SIDE */}
 
@@ -19,7 +19,7 @@ const Navbar = () => {
         </div>
         {/* RIGHT SIDE */}
         {isAboveMediumScreen ? (
-          <div className="flex w-2/3 justify-between">
+          <div className="flex w-2/3 justify-between text-sm">
             <ul className={`${FLEXCENTER} gap-5`}>
               {PAGES.map((page: string) => (
                 <Link key={page} page={page} />
@@ -33,10 +33,10 @@ const Navbar = () => {
           </div>
         ) : (
           <button
-            className="rounded-full bg-primary-500"
+            className="h-6 w-6 rounded-full bg-primary-500 p-1"
             onClick={() => setIsMenuToggled(!isMenuToggled)}
           >
-            <Bars3Icon className="h-6 w-6 p-1 text-white" />
+            <Bars3Icon className="text-white" />
           </button>
         )}
 

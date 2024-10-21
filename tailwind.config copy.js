@@ -14,7 +14,7 @@ export default {
         "secondary-500": "#358D99",
       },
       fontFamily: {
-        roboto: ["Roboto", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
         oleo: ["Oleo Script", "sans-serif"],
         rocknroll: ["RocknRoll One", "sans-serif"],
       },
@@ -27,11 +27,6 @@ export default {
         evolvetext: "url('./assets/something.png')",
         name: "url('./assets/name.png')",
       },
-    },
-    screens: {
-      xs: "480px",
-      sm: "768px",
-      md: "1060px",
     },
   },
   plugins: [],

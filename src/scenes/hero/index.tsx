@@ -1,10 +1,13 @@
 import OrbitingCircles from "@/components/ui/orbiting-circles";
 import { FLEXCENTER } from "@/constants/styles";
 import Basics from "./Basics";
+import useMediaQuery from "@/hooks/useMediaQuery";
 
 export function Hero() {
+  const isAboveSmallScreen = useMediaQuery("(min-width:768px");
+  console.log(isAboveSmallScreen);
   return (
-    <div className={`${FLEXCENTER} h-[650px] bg-gray-50`}>
+    <div id="#hero" className={`${FLEXCENTER} h-[650px] bg-gray-50`}>
       <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg">
         <Basics />
 
@@ -28,8 +31,8 @@ export function Hero() {
 
         {/* Outer Circles (reverse) */}
         <OrbitingCircles
-          className="size-[150px] border-none bg-transparent"
-          radius={240}
+          className="size-[80px] border-none bg-transparent sm:size-[150px]"
+          radius={isAboveSmallScreen ? 240 : 120}
           duration={40}
           reverse
         >
@@ -41,7 +44,7 @@ export function Hero() {
         </OrbitingCircles>
         <OrbitingCircles
           className="size-[50px] border-none bg-transparent"
-          radius={240}
+          radius={isAboveSmallScreen ? 240 : 120}
           duration={40}
           delay={30}
           reverse

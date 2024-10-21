@@ -27,12 +27,24 @@ export default function OrbitingCircles({
           version="1.1"
           className="pointer-events-none absolute inset-0 size-full"
         >
+          <defs>
+            <linearGradient
+              id="gradient-fill"
+              x1="0%"
+              y1="0%"
+              x2="100%"
+              y2="100%"
+            >
+              <stop offset="0%" stopColor="#F28D70" />
+              <stop offset="100%" stopColor="#358D99" />
+            </linearGradient>
+          </defs>
           <circle
             className="stroke-white/10 stroke-2 dark:stroke-white/10"
             cx="50%"
             cy="50%"
             r={radius}
-            fill="#BBAB94"
+            fill="url(#gradient-fill)"
           />
         </svg>
       )}

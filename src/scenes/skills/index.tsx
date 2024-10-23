@@ -60,7 +60,7 @@ const Skills = () => {
           {skillsData.map((skill) => (
             <div
               key={skill.name}
-              className="bg-gray-10 group relative flex h-[7rem] w-full flex-col justify-start gap-3 rounded-lg p-4 shadow-lg" // Add group class for hover effects
+              className="group relative flex h-[7rem] w-full flex-col justify-start gap-3 rounded-lg bg-gray-10 p-4 shadow-lg" // Add group class for hover effects
             >
               <h3 className="text-md mb-2 text-left font-semibold text-gray-50">
                 {skill.name}

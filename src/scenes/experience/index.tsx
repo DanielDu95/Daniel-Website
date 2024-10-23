@@ -3,10 +3,10 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-
 import "react-vertical-timeline-component/style.min.css";
 import { LEARNING_EXPERIENCE } from "@/constants/arrays";
 import { useState } from "react";
+import { Element } from "react-scroll";
 
 const LearningExperience = () => {
   const [visibleDescriptions, setVisibleDescriptions] = useState(
@@ -18,8 +18,9 @@ const LearningExperience = () => {
     newVisibleDescriptions[index] = !newVisibleDescriptions[index];
     setVisibleDescriptions(newVisibleDescriptions);
   };
+
   return (
-    <div id="portfolio" className={`${FLEXCENTER} w-full bg-gray-50 py-10`}>
+    <Element name="career" className={`${FLEXCENTER} w-full bg-gray-50 py-10`}>
       <div className="w-full max-w-4xl px-4">
         <h2 className="mb-8 text-left font-rocknroll text-2xl text-gray-100">
           My Learning Journey
@@ -77,7 +78,7 @@ const LearningExperience = () => {
           ))}
         </VerticalTimeline>
       </div>
-    </div>
+    </Element>
   );
 };
 

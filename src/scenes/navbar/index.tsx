@@ -1,57 +1,63 @@
 import { PAGES } from "@/constants/arrays";
 import { FLEXCENTER } from "@/constants/styles";
-import Link from "./Link";
+import LinkButton from "./LinkButton";
 import { useState } from "react";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
+import useIsAtTop from "@/hooks/useIsAtTop";
 
 const Navbar = () => {
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   const isAboveMediumScreen = useMediaQuery("(min-width: 1060px)");
+  const isAtTop = useIsAtTop();
 
   return (
-    <nav className={`${FLEXCENTER} w-full bg-gray-20 py-4 text-xl`}>
+    <nav
+      className={`${FLEXCENTER} ${isAtTop ? "" : "shadow-gray-20"} fixed left-0 right-0 top-0 z-50 w-full bg-gray-20 py-4 text-xl shadow-sm transition-all duration-300 ease-in-out`}
+    >
       <div className="flex w-4/5 justify-between">
         {/* LEFT SIDE */}
-
-        <div className={`${FLEXCENTER} `}>
-          <span className="font-oleo">Daniel Du</span>
+        <div className={`${FLEXCENTER}`}>
+          <span className="font-oleo text-2xl text-gray-50 transition-colors duration-300 hover:text-primary-600">
+            Daniel Du
+          </span>
         </div>
+
         {/* RIGHT SIDE */}
         {isAboveMediumScreen ? (
           <div className="flex w-2/3 justify-between text-sm">
             <ul className={`${FLEXCENTER} gap-5`}>
               {PAGES.map((page: string) => (
-                <Link key={page} page={page} />
+                <LinkButton key={page} page={page} />
               ))}
             </ul>
             <ul className={`${FLEXCENTER} gap-4`}>
               <li>
                 <img
-                  className="w-6"
+                  className="w-6 transition-transform duration-300 ease-in-out hover:scale-110"
                   src="/src/assets/icons/facebook.png"
                   alt="facebook"
                 />
               </li>
               <li>
                 <img
-                  className="w-6"
+                  className="w-6 transition-transform duration-300 ease-in-out hover:scale-110"
                   src="/src/assets/icons/github.png"
-                  alt="facebook"
+                  alt="github"
                 />
               </li>
               <li>
                 <img
-                  className="w-6"
+                  className="w-6 transition-transform duration-300 ease-in-out hover:scale-110"
                   src="/src/assets/icons/instagram.png"
-                  alt="facebook"
+                  alt="instagram"
                 />
               </li>
             </ul>
           </div>
         ) : (
           <button
-            className="h-6 w-6 rounded-full bg-primary-500 p-1"
+            className="h-8 w-8 rounded-full bg-primary-500 p-2 transition-colors duration-300 ease-in-out hover:bg-primary-600"
             onClick={() => setIsMenuToggled(!isMenuToggled)}
           >
             <Bars3Icon className="text-white" />
@@ -65,13 +71,13 @@ const Navbar = () => {
               className="fixed right-6 top-6"
               onClick={() => setIsMenuToggled(false)}
             >
-              <XMarkIcon className="h-6 w-6 text-white" />
+              <XMarkIcon className="h-8 w-8 text-primary-500" />
             </button>
             <div
               className={`${FLEXCENTER} h-full w-3/4 flex-col gap-10 p-4 text-xl`}
             >
               {PAGES.map((page: string) => (
-                <Link key={page} page={page} />
+                <LinkButton key={page} page={page} />
               ))}
             </div>
           </div>

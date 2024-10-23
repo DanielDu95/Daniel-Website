@@ -1,4 +1,5 @@
 import PageProvider from "./hooks/PageProvider";
+import SelfTaughtExperience from "./scenes/experience";
 import { Hero } from "./scenes/hero";
 import Navbar from "./scenes/navbar";
 import Portfolio from "./scenes/portfolio";
@@ -12,6 +13,7 @@ function App() {
         <Hero />
         <Portfolio />
         <Skills />
+        <SelfTaughtExperience />
       </PageProvider>
     </>
   );

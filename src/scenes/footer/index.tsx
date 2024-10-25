@@ -64,7 +64,7 @@ const Footer = () => {
                 >
                   <img
                     className="w-7"
-                    src="/src/assets/icons/github.png"
+                    src="/assets/icons/github.png"
                     alt="GitHub"
                   />
                 </a>
@@ -78,7 +78,7 @@ const Footer = () => {
                 >
                   <img
                     className="w-7"
-                    src="/src/assets/icons/instagram.png"
+                    src="/assets/icons/instagram.png"
                     alt="Instagram"
                   />
                 </a>
@@ -92,7 +92,7 @@ const Footer = () => {
                 >
                   <img
                     className="w-7"
-                    src="/src/assets/icons/facebook.png"
+                    src="/assets/icons/facebook.png"
                     alt="Facebook"
                   />
                 </a>

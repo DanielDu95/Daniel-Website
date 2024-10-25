@@ -40,11 +40,13 @@ const Navbar = () => {
                 />
               </li>
               <li>
-                <img
-                  className="w-6 transition-transform duration-300 ease-in-out hover:scale-110"
-                  src="/src/assets/icons/github.png"
-                  alt="github"
-                />
+                <a href="https://github.com/DanielDu95">
+                  <img
+                    className="w-6 transition-transform duration-300 ease-in-out hover:scale-110"
+                    src="/src/assets/icons/github.png"
+                    alt="github"
+                  />
+                </a>
               </li>
               <li>
                 <img

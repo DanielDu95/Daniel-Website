@@ -35,11 +35,7 @@ export function Hero() {
           duration={40}
           reverse
         >
-          <img
-            src="../src/assets/img/Daniel.jpg"
-            alt=""
-            className="rounded-full"
-          />
+          <img src="/assets/img/Daniel.jpg" alt="" className="rounded-full" />
         </OrbitingCircles>
         <OrbitingCircles
           className="size-[50px] border-none bg-transparent"

@@ -35,7 +35,7 @@ const Navbar = () => {
               <li>
                 <img
                   className="w-6 transition-transform duration-300 ease-in-out hover:scale-110"
-                  src="/src/assets/icons/facebook.png"
+                  src="/assets/icons/facebook.png"
                   alt="facebook"
                 />
               </li>
@@ -43,7 +43,7 @@ const Navbar = () => {
                 <a href="https://github.com/DanielDu95">
                   <img
                     className="w-6 transition-transform duration-300 ease-in-out hover:scale-110"
-                    src="/src/assets/icons/github.png"
+                    src="/assets/icons/github.png"
                     alt="github"
                   />
                 </a>
@@ -51,7 +51,7 @@ const Navbar = () => {
               <li>
                 <img
                   className="w-6 transition-transform duration-300 ease-in-out hover:scale-110"
-                  src="/src/assets/icons/instagram.png"
+                  src="/assets/icons/instagram.png"
                   alt="instagram"
                 />
               </li>

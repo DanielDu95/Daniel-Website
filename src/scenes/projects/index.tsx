@@ -10,9 +10,9 @@ const Projects = () => {
   );
 
   const images = [
-    "/src/assets/img/blance-book-dashbaord.jpg",
-    "/src/assets/img/blance-book-monthly.jpg",
-    "/src/assets/img/blance-book-annual.jpg",
+    "/assets/img/blance-book-dashbaord.jpg",
+    "/assets/img/blance-book-monthly.jpg",
+    "/assets/img/blance-book-annual.jpg",
   ];
 
   useEffect(() => {

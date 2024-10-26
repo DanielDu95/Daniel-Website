@@ -14,7 +14,7 @@ export const LEARNING_EXPERIENCE = [
     operating systems, networking, and how modern computing evolved from early machines. This course gave me 
     a deeper appreciation for the architecture behind everyday technology.`,
     period: "2022.12.2-2022.12.9",
-    image: "/src/assets/img/CrashCourseComputerScience.jpg",
+    image: "/assets/img/CrashCourseComputerScience.jpg",
   },
   {
     courseName: "UCB CS 61A: Computer Programs, Fall 2020",
@@ -22,7 +22,7 @@ export const LEARNING_EXPERIENCE = [
     especially Python. I delved into key concepts like recursion, higher-order functions, and object-oriented 
     programming. CS 61A helped me think critically about code structure and efficiency.`,
     period: "2022.12.10-2023.3.28",
-    image: "/src/assets/img/UCB61A.jpg",
+    image: "/assets/img/UCB61A.jpg",
   },
   {
     courseName: "Harvard CS50 (2022) - Full Computer Science University Course",
@@ -32,7 +32,7 @@ export const LEARNING_EXPERIENCE = [
     and basic front-end development principles. Additionally, I explored programming in C, which sharpened 
     my logic and debugging skills.`,
     period: "2023.3.29-2023.4.1",
-    image: "/src/assets/img/HarvardCS50.jpg",
+    image: "/assets/img/HarvardCS50.jpg",
   },
   {
     courseName: "The Complete JavaScript Course 2023: From Zero to Expert!",
@@ -41,7 +41,7 @@ export const LEARNING_EXPERIENCE = [
     event-driven architecture, and ES6+ features. I built numerous projects, applying JavaScript to real-world 
     scenarios, which reinforced my understanding of functions, closures, and the DOM.`,
     period: "2023.5.28-2023.11.11",
-    image: "/src/assets/img/Javascript.jpg",
+    image: "/assets/img/Javascript.jpg",
   },
   {
     courseName: "Udemy - The Ultimate React Course 2023 React, Redux",
@@ -50,7 +50,7 @@ export const LEARNING_EXPERIENCE = [
     I also learned Redux for managing global application state and explored how React's declarative approach 
     simplifies UI development.`,
     period: "2023.11.12-present",
-    image: "/src/assets/img/React.jpg",
+    image: "/assets/img/React.jpg",
   },
   {
     courseName:
@@ -60,7 +60,7 @@ export const LEARNING_EXPERIENCE = [
     for various devices, and implement CSS animations to enhance user experience.`,
 
     period: "2024.3.3-2024.3.15",
-    image: "/src/assets/img/HTMLCSS.jpg",
+    image: "/assets/img/HTMLCSS.jpg",
   },
   {
     courseName: "Udemy - React & TypeScript - The Practical Guide",
@@ -68,7 +68,7 @@ export const LEARNING_EXPERIENCE = [
     reduced the number of bugs in my applications. This course highlighted the advantages of using TypeScript in 
     large-scale applications and how it helps prevent common JavaScript pitfalls.`,
     period: "2024.9.3-2024.9.30",
-    image: "/src/assets/img/TypescriptReact.jpg",
+    image: "/assets/img/TypescriptReact.jpg",
   },
 ];
 

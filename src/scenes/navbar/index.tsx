@@ -49,11 +49,13 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <img
-                  className="w-6 transition-transform duration-300 ease-in-out hover:scale-110"
-                  src="/assets/icons/instagram.png"
-                  alt="instagram"
-                />
+                <a href="https://www.instagram.com/danieldu1131/">
+                  <img
+                    className="w-6 transition-transform duration-300 ease-in-out hover:scale-110"
+                    src="assets/icons/instagram.png"
+                    alt="instagram"
+                  />
+                </a>
               </li>
             </ul>
           </div>

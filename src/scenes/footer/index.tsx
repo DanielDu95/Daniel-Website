@@ -57,21 +57,21 @@ const Footer = () => {
             <ul className="flex space-x-5">
               <li>
                 <a
-                  href="https://github.com/"
+                  href="https://github.com/DanielDu95"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="transform transition duration-200 hover:scale-110"
                 >
                   <img
                     className="w-7"
-                    src="/assets/icons/github.png"
+                    src="assets/icons/github.png"
                     alt="GitHub"
                   />
                 </a>
               </li>
               <li>
                 <a
-                  href="https://www.instagram.com/"
+                  href="https://www.instagram.com/danieldu1131/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="transform transition duration-200 hover:scale-110"

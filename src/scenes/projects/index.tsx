@@ -3,7 +3,7 @@ import Button from "@/components/Button";
 import { FLEXCENTER } from "@/constants/styles";
 import useMediaQuery from "@/hooks/useMediaQuery";
 
-const Portfolio = () => {
+const Projects = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const isBetweenXsmallAndSmall = useMediaQuery(
     "(min-width:480px) and (max-width:768px)",
@@ -25,10 +25,10 @@ const Portfolio = () => {
   }, [isBetweenXsmallAndSmall, images.length]);
 
   return (
-    <div id="portfolio" className={`${FLEXCENTER} w-full bg-gray-50 py-10`}>
+    <div id="projects" className={`${FLEXCENTER} w-full bg-gray-50 py-10`}>
       <div className="w-full max-w-4xl px-4">
         <h2 className="mb-8 text-left font-rocknroll text-2xl text-gray-100">
-          Portfolio
+          Projects
         </h2>
 
         <div
@@ -128,4 +128,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Projects;

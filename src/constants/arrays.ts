@@ -1,7 +1,7 @@
 export const PAGES: string[] = [
   "Favorites",
   "Home",
-  "Portfolio",
+  "Projects",
   "Skills",
   "Career",
 ];

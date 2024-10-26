@@ -3,7 +3,7 @@ import SelfTaughtExperience from "./scenes/experience";
 import Footer from "./scenes/footer";
 import { Hero } from "./scenes/hero";
 import Navbar from "./scenes/navbar";
-import Portfolio from "./scenes/portfolio";
+import Projects from "./scenes/projects";
 import Skills from "./scenes/skills";
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <PageProvider>
         <Navbar />
         <Hero />
-        <Portfolio />
+        <Projects />
         <Skills />
         <SelfTaughtExperience />
         <Footer />

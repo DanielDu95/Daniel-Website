@@ -49,7 +49,7 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className={`${FLEXCENTER} w-full flex-col bg-gray-50 py-10`}
+      className={`${FLEXCENTER} w-full flex-col bg-gray-50 py-10 pt-20`}
     >
       <div className="w-full max-w-4xl px-4">
         <h2 className="mb-8 text-left font-rocknroll text-2xl text-gray-100">

@@ -85,7 +85,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://www.facebook.com/"
+                  href="https://www.facebook.com/profile.php?id=61560109734825"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="transform transition duration-200 hover:scale-110"

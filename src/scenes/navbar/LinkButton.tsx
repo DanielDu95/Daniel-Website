@@ -22,7 +22,7 @@ const LinkButton = ({ page }: Props) => {
       } font-semibold transition duration-500 hover:text-primary-500`}
       smooth={true}
       duration={500}
-      offset={-25}
+      offset={0}
       to={lowerCasePage}
       spy={true} // Enable spy to monitor scroll
       onSetActive={() => setSelectedPage(lowerCasePage)} // Updates the selectedPage on scroll

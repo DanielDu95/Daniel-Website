@@ -33,14 +33,24 @@ const Navbar = () => {
             </ul>
             <ul className={`${FLEXCENTER} gap-4`}>
               <li>
-                <img
-                  className="w-6 transition-transform duration-300 ease-in-out hover:scale-110"
-                  src="/assets/icons/facebook.png"
-                  alt="facebook"
-                />
+                <a
+                  href="https://www.facebook.com/profile.php?id=61560109734825"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="w-6 transition-transform duration-300 ease-in-out hover:scale-110"
+                    src="/assets/icons/facebook.png"
+                    alt="facebook"
+                  />
+                </a>
               </li>
               <li>
-                <a href="https://github.com/DanielDu95">
+                <a
+                  href="https://github.com/DanielDu95"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img
                     className="w-6 transition-transform duration-300 ease-in-out hover:scale-110"
                     src="/assets/icons/github.png"
@@ -49,7 +59,11 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/danieldu1131/">
+                <a
+                  href="https://www.instagram.com/danieldu1131/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img
                     className="w-6 transition-transform duration-300 ease-in-out hover:scale-110"
                     src="assets/icons/instagram.png"

@@ -20,7 +20,7 @@ const LearningExperience = () => {
   };
 
   return (
-    <Element name="career" className={`${FLEXCENTER} w-full bg-gray-50 py-10`}>
+    <Element name="career" className={`${FLEXCENTER} w-full bg-gray-50 pt-20`}>
       <div className="w-full max-w-4xl px-4">
         <h2 className="mb-8 text-left font-rocknroll text-2xl text-gray-100">
           My Learning Journey

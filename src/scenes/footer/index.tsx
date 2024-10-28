@@ -54,6 +54,12 @@ const Footer = () => {
               Feel free to get in touch if you'd like to discuss potential
               opportunities or just to say hello!
             </p>
+            <a
+              href="mailto:danieldu1131@gmail.com"
+              className="text-[#FFE3D0] transition duration-200 hover:text-primary-500"
+            >
+              danieldu1131@gmail.com
+            </a>
             <ul className="flex space-x-5">
               <li>
                 <a
